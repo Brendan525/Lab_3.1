@@ -17,7 +17,7 @@ namespace Lab_3._1
                 {"Charles", "Nerds", "Software Engineer" }
             };
 
-             Console.WriteLine("Which student do you want to know about? Enter a number between 1 and 3");
+             Console.WriteLine("Which student do you want to know about? Enter a number between 1 and 3 or enter 4 to see all the names");
 
                 entry = Console.ReadLine();
 
@@ -274,7 +274,15 @@ namespace Lab_3._1
                     }
                 }
 
-                } while (redo = true);
+                else if (input == 4)
+                {
+                    Console.WriteLine("Student 1 is " + students[0,0]);
+                    Console.WriteLine("Student 2 is " + students[1, 0]);
+                    Console.WriteLine("Student 3 is " + students[2, 0]);
+                    break;
+                }
+
+            } while (redo = true);
 
         }
 
